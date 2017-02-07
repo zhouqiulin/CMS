@@ -6,8 +6,8 @@ namespace CMS.Data
 {
     public class CMSDBContext:DbContext
     {
-        DbSet<Article> Articles { get; set; }
-        DbSet<User> Users { get; set; }
+      public  DbSet<Article> Articles { get; set; }
+      public  DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
