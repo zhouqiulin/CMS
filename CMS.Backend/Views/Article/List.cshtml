@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "文章列表";
+
+}
+@model List<Article>
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>标题</th>
+                <th>摘要</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <th>@(i+1)</th>
+                    <th>@Model[i].Title</th>
+                    <th>@Model[i].Summary</th>
+                    <th>@Model[i].CreateTime</th>
+                    <th>
+                        <button>编辑</button>
+                        <button>置顶</button>
+                        <button>删除</button>
+                    </th>
+                </tr>
+            }
+          
+        </tbody>
+    </table>
+}

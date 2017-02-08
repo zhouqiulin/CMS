@@ -21,9 +21,9 @@ namespace CMS.Backend.Controllers
         }
         public IActionResult List()
         {
+            List<Article> model = _context.Article.ToList();
 
-
-            return View();
+            return View(model);
         }
 
         public IActionResult Add()
