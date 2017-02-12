@@ -55,7 +55,7 @@ namespace CMS.Backend
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Article}/{action=List}/{id?}");
+                    template: "{controller=Article}/{action=edit}/{id?}");
             });
         }
     }

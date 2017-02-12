@@ -26,24 +26,35 @@ namespace CMS.Backend.Controllers
             return View(model);
         }
 
-        public IActionResult Add()
-        {
-            for (int i = 1; i < 10; i++)
-            {
-                Article o = new Article()
-                {
-                    Title = $"这是第{i}个标题",
-                    Summary= $"这是第{i}个描述信息",
-                    
-                };
-                _context.Article.Add(o);
+        [HttpGet]
+        public IActionResult Edit() {
 
-            }
-
-            _context.SaveChanges();
-
-            return null;
+            return View();
         }
+        [HttpPost]
+        public IActionResult Edit(Article model) {
+
+            return View();
+        }
+
+        //public IActionResult Seed()
+        //{
+        //    for (int i = 1; i < 10; i++)
+        //    {
+        //        Article o = new Article()
+        //        {
+        //            Title = $"这是第{i}个标题",
+        //            Summary= $"这是第{i}个描述信息",
+                    
+        //        };
+        //        _context.Article.Add(o);
+
+        //    }
+
+        //    _context.SaveChanges();
+
+        //    return null;
+        //}
 
     }
 }
