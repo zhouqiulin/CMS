@@ -2100,3 +2100,7 @@ h3 > .breadcrumb,
     width: 100% !important; }
   .content-wrapper {
     overflow: hidden !important; } }
+
+.zqltest {
+  background: red;
+  color: red; }

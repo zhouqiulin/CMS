@@ -4,6 +4,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <UserSecretsId>967a2fbd-1d8b-4b87-902c-ac97a4c34ff4</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="wwwroot\css\app.css" />
@@ -339,6 +340,7 @@
     <Content Include="wwwroot\master\sass\app\offsidebar.scss" />
     <Content Include="wwwroot\master\sass\app\print.scss" />
     <Content Include="wwwroot\master\sass\app\sidebar.scss" />
+    <Content Include="wwwroot\master\sass\app\style.scss" />
     <Content Include="wwwroot\master\sass\app\top-navbar.scss" />
     <Content Include="wwwroot\master\sass\app\typo.scss" />
     <Content Include="wwwroot\master\sass\app\utils-definitions.scss" />
@@ -419,6 +421,7 @@
     <Content Include="wwwroot\master\sass\bootstrap\_bootstrap-mincer.scss" />
     <Content Include="wwwroot\master\sass\bootstrap\_bootstrap-sprockets.scss" />
     <Content Include="wwwroot\master\sass\bootstrap\_bootstrap.scss" />
+    <Content Include="wwwroot\master\sass\style.scss" />
     <Content Include="wwwroot\master\sass\themes\theme-a.scss" />
     <Content Include="wwwroot\master\sass\themes\theme-b.scss" />
     <Content Include="wwwroot\master\sass\themes\theme-c.scss" />
@@ -443,5 +446,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CMS.Data\CMS.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\upload\" />
   </ItemGroup>
 </Project>
